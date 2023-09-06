@@ -1,5 +1,6 @@
 from io import BytesIO
 from time import sleep
+from datetime import datetime
 
 from PIL import Image
 import streamlit as st
@@ -37,13 +38,16 @@ input_imagem = st.file_uploader(
 if input_imagem is not None:
     bytes_image = BytesIO(input_imagem.getvalue())
     txt_file = convert_image_to_text(bytes_image)
+    date_time = datetime.now().strftime("%Y%m%d%H%M%S")
+
     st.success(f"Upload feito com sucesso!")
-    sleep(3)
+
+    sleep(5)
+
     st.markdown("""### Imagem convertida com sucesso!!! :sunglasses:""")
     st.download_button(
-        label="Baixar Arquivo",
+        label="Baixe o arquivo clicando aqui.",
         data=txt_file,
-        file_name="teste.txt",
-        key='download_button'
+        file_name=f"imagem_convertida_{date_time}.txt",
+        key="download_button"
     )
-
