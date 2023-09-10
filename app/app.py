@@ -32,13 +32,13 @@ input_imagem = st.file_uploader(
     "Texto em formato de imagem",
     type=["jpg", "jpeg", "png"],
     accept_multiple_files=False,
-    label_visibility = "hidden"
+    label_visibility = "hidden",
+    key="upload_button"
 )
 
 if input_imagem is not None:
     bytes_image = BytesIO(input_imagem.getvalue())
     txt_file = convert_image_to_text(bytes_image)
-    date_time = datetime.now().strftime("%Y%m%d%H%M%S")
 
     st.success(f"Upload feito com sucesso!")
 
@@ -48,6 +48,6 @@ if input_imagem is not None:
     st.download_button(
         label="Baixe o arquivo clicando aqui.",
         data=txt_file,
-        file_name=f"imagem_convertida_{date_time}.txt",
+        file_name=f"imagem_convertida_{datetime.now().strftime('%Y%m%d%H%M%S')}.txt",
         key="download_button"
     )
