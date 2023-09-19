@@ -5,8 +5,7 @@ base = "light"
 port = 8000
 address = "0.0.0.0"
 headless = true
-enableCORS = false
-maxCacheSize = 126 #MB
+enableCORS = true
 
 [browser]
 gatherUsageStats = false
