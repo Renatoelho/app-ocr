@@ -51,7 +51,7 @@ docker build -f dockerfile -t app-ocr:0.0.1 .
 docker compose -p app_ocr -f docker-compose-abor-1.yaml up -d
 ```
 
-> Tecnicamente, a diferença entre as duas abordagens está na ausência das linhas 5, 6 e 7 do arquivo [docker-compose-abor-1.yaml](/docker-compose-abor-1.yaml) em relação ao [docker-compose-abor-2.yaml](/docker-compose-abor-2.yaml). Já na segunda abordagem, essas linhas são fundamentais para que não seja necessário executar o comando ```docker build```.
+> Tecnicamente, a diferença entre as duas abordagens está na ausência das linhas 5, 6 e 7 do arquivo [docker-compose-abor-2.yaml](/docker-compose-abor-2.yaml) em relação ao [docker-compose-abor-1.yaml](/docker-compose-abor-1.yaml). Já na segunda abordagem, essas linhas são fundamentais para que não seja necessário executar o comando ```docker build```.
 
 
 ### Abordagem somente com Docker Compose (mais objetiva)
