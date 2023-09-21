@@ -3,12 +3,12 @@
 
 ![Streamlit e Tesseract](https://drive.google.com/uc?export=view&id=12V733jQZavjJFfvKxn1ia-KrraINi3H3)
 
-Este projeto utiliza o poder e a facilidade de criação de aplicativos do Streamlit, juntamente com a versatilidade do Tesseract na conversão de imagens em texto (OCR). É uma aplicação muito simples, onde você faz o upload de uma imagem que contém textos e, em seguida, é disponibilizado para download um arquivo de texto com o conteúdo da imagem original.
-
 [![Tesseract](https://img.shields.io/badge/Tesseract-4.1.1-E3E3E3)](https://github.com/tesseract-ocr/tesseract)
 [![Pytesseract](https://img.shields.io/badge/Pytesseract-0.3.10-E3E3E3)](https://pypi.org/project/pytesseract/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.23.1-E3E3E3)](https://docs.streamlit.io/)
 [![Python](https://img.shields.io/badge/Python-3.8-E3E3E3)](https://www.python.org/downloads/release/python-3810/)
+
+Este projeto utiliza o poder e a facilidade de criação de aplicativos do Streamlit, juntamente com a versatilidade do Tesseract na conversão de imagens em texto (OCR). É uma aplicação muito simples, onde você faz o upload de uma imagem que contém textos e, em seguida, é disponibilizado para download um arquivo de texto com o conteúdo da imagem original.
 
 
 ### Requisitos
